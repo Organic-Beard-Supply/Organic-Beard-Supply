@@ -5,8 +5,8 @@
   "commands": {
         "Node version": "node --version",
       "Run Local Tests": "gulp serve:test",
-      "Run Local Site:App": "gulp serve",
-      "Run Local Site:Dist": "gulp serve:dist",
+      "Run Site:App": "gulp serve",
+      "Run Site:Dist": "gulp serve:dist",
       "Build Site": "gulp"
   },
 

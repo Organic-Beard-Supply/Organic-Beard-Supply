@@ -1,6 +1,19 @@
-/**
-* Document   : package.json
-* Created on : 2015-07-17 04:49 AM
-* Author     : yaboi
-* Description: Custom functionality for project:file.html
-*/
+{
+    "name": "organicbeardsupply",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:yaboi/organicbeardsupply.git"
+    },
+    "authors": {
+        "name": "Tyler Goelz",
+        "web": "http://tylergoelz.com"
+    },
+    "description": "",
+    "homepage": "http://organicbeardsupply.com",
+    "dependencies": {},
+    "devDependencies": {},
+    "engines": {
+        "node": ">=0.10.0"
+    }
+}

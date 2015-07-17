@@ -36,5 +36,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "newrelic": "^1.21.1"
   }
 }

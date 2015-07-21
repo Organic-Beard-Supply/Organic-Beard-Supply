@@ -1,51 +1,60 @@
 {
-  "name": "organic-beard-supply",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Organic-Beard-Supply/Organic-Beard-Supply.git"
-  },
-  "engines": {
-    "node": ">=0.12.0"
-  },
-  "devDependencies": {
-    "babel-core": "^5.7.4",
-    "browser-sync": "^2.2.1",
-    "del": "^1.1.1",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-cache": "^0.2.8",
-    "gulp-eslint": "^0.13.2",
-    "gulp-if": "^1.2.5",
-    "gulp-imagemin": "^2.2.1",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-minify-css": "^1.1.1",
-    "gulp-minify-html": "^1.0.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sass": "^2.0.0",
-    "gulp-size": "^1.2.1",
-    "gulp-sourcemaps": "^1.5.0",
-    "gulp-uglify": "^1.1.0",
-    "gulp-useref": "^1.1.1",
-    "main-bower-files": "^2.5.0",
-    "opn": "^1.0.1",
-    "wiredep": "^2.2.2"
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true,
-      "browser": true
+    "name": "organic-beard-supply",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Organic-Beard-Supply/Organic-Beard-Supply.git"
     },
-    "rules": {
-      "quotes": [
+    "authors": {
+        "name": "Tyler Goelz",
+        "web": "http://tylergoelz.com"
+    },
+    "description": "100% Organic, Small Batch Handcrafted Smart Site",
+    "homepage": "http://organicbeardsupply.com",
+    "dependencies": {
+        "compression": "^1.5.1",
+        "express": "^4.13.1",
+        "gzippo": "^0.2.0",
+        "newrelic": "^1.21.1",
+        "nodetime": "^0.8.15",
+        "serve-static": "^1.10.0"
+    },
+    "devDependencies": {
+        "babel-core": "^5.7.4",
+        "browser-sync": "^2.2.1",
+        "del": "^1.1.1",
+        "gulp": "^3.9.0",
+        "gulp-autoprefixer": "^2.3.1",
+        "gulp-cache": "^0.2.8",
+        "gulp-eslint": "^0.13.2",
+        "gulp-if": "^1.2.5",
+        "gulp-imagemin": "^2.2.1",
+        "gulp-load-plugins": "^0.10.0",
+        "gulp-minify-css": "^1.1.1",
+        "gulp-minify-html": "^1.0.0",
+        "gulp-plumber": "^1.0.1",
+        "gulp-sass": "^2.0.0",
+        "gulp-size": "^1.2.1",
+        "gulp-sourcemaps": "^1.5.0",
+        "gulp-uglify": "^1.1.0",
+        "gulp-useref": "^1.1.1",
+        "main-bower-files": "^2.5.0",
+        "opn": "^1.0.1",
+        "wiredep": "^2.2.2"
+    },
+    "engines": {
+        "node": ">=0.12.0"
+    },
+    "eslintConfig": {
+        "env": {
+            "node": true,
+            "browser": true
+        },
+        "rules": {
+            "quotes": [
         2,
         "single"
       ]
+        }
     }
-  },
-  "dependencies": {
-    "express": "^4.13.1",
-    "gzippo": "^0.2.0",
-    "newrelic": "^1.21.1",
-    "nodetime": "^0.8.15"
-  }
 }

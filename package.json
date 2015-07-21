@@ -1,9 +1,14 @@
 {
+  "name": "organic-beard-supply",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Organic-Beard-Supply/Organic-Beard-Supply.git"
+  },
   "engines": {
     "node": ">=0.12.0"
   },
   "devDependencies": {
-    "babel-core": "^5.5.6",
+    "babel-core": "^5.7.4",
     "browser-sync": "^2.2.1",
     "del": "^1.1.1",
     "gulp": "^3.9.0",
@@ -38,6 +43,9 @@
     }
   },
   "dependencies": {
-    "newrelic": "^1.21.1"
+    "express": "^4.13.1",
+    "gzippo": "^0.2.0",
+    "newrelic": "^1.21.1",
+    "nodetime": "^0.8.15"
   }
 }

@@ -1,4 +1,4 @@
-// generated on 2015-07-17 using generator-gulp-webapp 1.0.3
+// generated on <%= date %> using <%= name %> <%= version %>
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
@@ -93,7 +93,7 @@ gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 gulp.task('serve', ['styles', 'fonts'], () => {
   browserSync({
     notify: false,
-    port: 3000,
+    port: 9000,
     server: {
       baseDir: ['.tmp', 'app'],
       routes: {
@@ -104,7 +104,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
 
   gulp.watch([
     'app/*.html',
-    'app/*/*.html',
+    'app/**/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
@@ -118,7 +118,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
 gulp.task('serve:dist', () => {
   browserSync({
     notify: false,
-    port: 3000,
+    port: 9000,
     server: {
       baseDir: ['dist']
     }
@@ -149,7 +149,6 @@ gulp.task('wiredep', () => {
       ignorePath: /^(\.\.\/)+/
     }))
     .pipe(gulp.dest('app/styles'));
-
   gulp.src('app/*.html')
     .pipe(wiredep({
       exclude: ['bootstrap-sass'],

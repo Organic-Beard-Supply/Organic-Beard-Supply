@@ -6,8 +6,8 @@
         "Node version": "node --version",
       "Run Local Tests": "gulp serve:test",
       "Run Site:App": "gulp serve",
-      "Run Site:Dist": "gulp serve:dist",
-      "Build Site": "gulp"
+      "Build Site": "gulp",
+      "Run Site:Dist": "gulp serve:dist"
   },
 
 // Preview button configuration

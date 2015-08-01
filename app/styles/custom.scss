@@ -19,3 +19,21 @@
         }
     }
 }
+
+.white-text-link {
+    color: #fff;
+    
+    &:hover {
+        color: #fff;
+        opacity: .8;
+        text-decoration: underline;
+    }
+}
+
+.black-text-link {
+    color: #222 !important;
+    
+    &:hover {
+        color: #b6cf6c !important;
+    }
+}

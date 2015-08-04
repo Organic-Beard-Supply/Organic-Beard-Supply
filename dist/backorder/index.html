@@ -184,14 +184,14 @@
                         <h5>Since we handcraft each of our Beard Oils in small batches and the demand is so high, we're a little backed up. To make it up to you, when our next small batch is complete, we will give you your <b>FIRST MONTH FREE</b> when you subscribe.</h5>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="free-month-form">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center" style="padding-top: 30px;">
                         <div class="well">
                             <form style="width: 100%; padding-top: 25px;" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://tylergoelz.wufoo.com/embed/m1hheqjk1vt3162/def/embedKey=m1hheqjk1vt3162721007&amp;entsource=&amp;referrer=http%3Awuslashwuslashnews-genuine.codio.io%3A3000wuslashbackorderwuslash#public">
                                 <ul>
                                     <li id="fo2li1">
                                         <div>
-                                            <input id="Field1" name="Field1" type="text" spellcheck="false" class="validate-required validate-email signup-email-field" placeholder="Email Address" maxlength="255" tabindex="1" onkeyup="handleInput(this);" onchange="handleInput(this);" style="width: 100%; margin-bottom: 10px; display: block;">
+                                            <input data-toggle="tooltip" data-title="Enter your email address and get your first month free when you purchase a subscription." data-trigger="focus" id="Field1" name="Field1" type="text" spellcheck="false" class="validate-required validate-email signup-email-field" placeholder="Email Address" maxlength="255" tabindex="1" onkeyup="handleInput(this);" onchange="handleInput(this);" style="width: 100%; margin-bottom: 10px; display: block;">
                                         </div>
                                     </li>
                                     <li class="buttons ">
@@ -233,7 +233,7 @@
                         <p class="lead">
                             With our increase in popularity, we are working quickly to figure out the best way to provide the highest quality Beard Oil while still ensuring authenticity.</p>
                         <p class="lead">
-                            We appreciate your understanding and want to make it up to you. We want to give you your <strong><a href="#" class="black-text-link">first month free</a></strong> when you subscribe for Organic Beard Supply's monthly subscription service. Simply enter your email address above and we will send you an exclusive coupon code when our next batch is ready.</p>
+                            We appreciate your understanding and want to make it up to you. We want to give you your <strong><a href="#" id="first-month-free" class="black-text-link">first month free</a></strong> when you subscribe for Organic Beard Supply's monthly subscription service. Simply enter your email address above and we will send you an exclusive coupon code when our next batch is ready.</p>
                         <p class="lead">Our focus is to provide high quality, organic beard oil without sacrificing technique and care in order to pass savings along for a sub-par product. Your beard deserves the best and we are here to give it just that.
                             <br>
                         </p>
@@ -275,6 +275,10 @@
     <script src="//variant.ninja//js/main.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            $("#first-month-free").on('click', function () {
+                $('#Field1').focus();
+            });
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>

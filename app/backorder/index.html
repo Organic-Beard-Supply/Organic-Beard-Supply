@@ -179,9 +179,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <h2>Wow - you guys are awesome.<br>To be honest, we're a little overwhelmed...</h2>
+                        <h2>Wow - you guys are awesome.<br class="hidden-xs"> To be honest, we're a little overwhelmed...</h2>
                         <br>
-                        <h5>Since we handcraft each of our Beard Oils in small batches and the demand is so high, we're a little backed up. To make it up to you, when our next small batch is complete, we will give you your <b>FIRST MONTH FREE</b> when you subscribe.</h5>
+                        <h5>Since we handcraft each of our Beard Oils in small batches and the demand is so high, we're a little backed up. To make it up to you, when our next small batch is complete, we will give you your <strong><a href="#" class="black-text-link first-month-free">FIRST MONTH FREE</a></strong> when you subscribe.</h5>
                     </div>
                 </div>
                 <div class="row" id="free-month-form">
@@ -220,6 +220,11 @@
                 </div>
             </div>
         </section>
+        <section class="header header-12 overlay">
+            <div class="background-image-holder">
+                <img alt="Background Image" class="background-image" src="/images/bg/product-shot.png">
+            </div>
+        </section>
         <section class="news news-1  bg-secondary">
             <div class="container">
                 <div class="row">
@@ -233,7 +238,7 @@
                         <p class="lead">
                             With our increase in popularity, we are working quickly to figure out the best way to provide the highest quality Beard Oil while still ensuring authenticity.</p>
                         <p class="lead">
-                            We appreciate your understanding and want to make it up to you. We want to give you your <strong><a href="#" id="first-month-free" class="black-text-link">first month free</a></strong> when you subscribe for Organic Beard Supply's monthly subscription service. Simply enter your email address above and we will send you an exclusive coupon code when our next batch is ready.</p>
+                            We appreciate your understanding and want to make it up to you. We want to give you your <strong><a href="#" class="black-text-link first-month-free">first month free</a></strong> when you subscribe for Organic Beard Supply's monthly subscription service. Simply enter your email address above and we will send you an exclusive coupon code when our next batch is ready.</p>
                         <p class="lead">Our focus is to provide high quality, organic beard oil without sacrificing technique and care in order to pass savings along for a sub-par product. Your beard deserves the best and we are here to give it just that.
                             <br>
                         </p>
@@ -276,7 +281,7 @@
     <script type="text/javascript">
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
-            $("#first-month-free").on('click', function () {
+            $(".first-month-free").on('click', function () {
                 $('#Field1').focus();
             });
             $('[data-toggle="tooltip"]').tooltip()

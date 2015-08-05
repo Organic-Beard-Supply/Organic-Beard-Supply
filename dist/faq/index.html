@@ -289,6 +289,29 @@
         </footer>
     </div>
 
+    <script type="text/javascript">
+        UserVoice = window.UserVoice || [];
+        (function () {
+            var uv = document.createElement('script');
+            uv.type = 'text/javascript';
+            uv.async = true;
+            uv.src = '//widget.uservoice.com/4HWcEhIsGNJIhYy90Bv8g.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(uv, s)
+        })();
+        UserVoice.push(['set', {
+            accent_color: '#b6cf6c',
+            trigger_color: 'white',
+            trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+            post_idea_enabled: 'false',
+            contact_enabled: 'true'
+        }]);
+        UserVoice.push(['addTrigger', {
+            trigger_position: 'bottom-right',
+            mode: 'contact'
+        }]);
+        UserVoice.push(['autoprompt', {}]);
+    </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

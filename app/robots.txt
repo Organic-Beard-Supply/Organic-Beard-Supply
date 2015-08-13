@@ -1,4 +1,5 @@
 # robotstxt.org/
 
+Sitemap: http://www.organicbeardsupply.com/sitemap.xml
 User-agent: * 
 Disallow:

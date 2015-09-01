@@ -75,13 +75,14 @@ nav ul ul {
 }
 
 .star-rating {
-  position: relative;
-  top: 5px;
-  height: 1.2em;
-  line-height: 1em;
-  overflow: hidden;
-  position: relative;
-  width: 5.4em;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    height: 1.2em;
+    line-height: 1em;
+    overflow: hidden;
+    position: relative;
+    width: 5.4em;
     
     &:before {
       color: #ededed;
@@ -104,13 +105,21 @@ nav ul ul {
         
         &:before {
           color: #f9ac20;
-          content: "\f006\f006\f006\f006\f006";
           font-family: FontAwesome;
           left: 0;
           letter-spacing: 2px;
           position: absolute;
           top: 0;
-        }    
+        }
+        
+        &.four-half-star:before {
+            content: "\f005\f005\f005\f005\f123";
+        }
+        
+        &.five-star:before {
+            content: "\f005\f005\f005\f005\f005";
+        }
+        
     }
     
     @media (max-width: 991px) {

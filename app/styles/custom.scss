@@ -73,3 +73,56 @@ nav ul ul {
         }
     }
 }
+
+.star-rating {
+  position: relative;
+  top: 5px;
+  height: 1.2em;
+  line-height: 1em;
+  overflow: hidden;
+  position: relative;
+  width: 5.4em;
+    
+    &:before {
+      color: #ededed;
+      content: "\f006\f006\f006\f006\f006";
+      font-family: FontAwesome;
+      float: left;
+      left: 0;
+      letter-spacing: 2px;
+      position: absolute;
+      top: 0;
+    }
+    
+    span {
+      float: left;
+      left: 0;
+      overflow: hidden;
+      padding-top: 1.5em;
+      position: absolute;
+      top: 0;
+        
+        &:before {
+          color: #f9ac20;
+          content: "\f006\f006\f006\f006\f006";
+          font-family: FontAwesome;
+          left: 0;
+          letter-spacing: 2px;
+          position: absolute;
+          top: 0;
+        }    
+    }
+    
+    @media (max-width: 991px) {
+        &.pull-right {
+          float: none !important;
+          margin-bottom: 12px;
+        }
+    }
+}
+
+.testimonials-2 {
+    p {
+        margin-bottom: 5px;
+    }
+}
